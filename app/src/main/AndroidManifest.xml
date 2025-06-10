@@ -18,7 +18,7 @@
         tools:ignore="AllowBackup,GoogleAppIndexingWarning">
 
         <activity
-            android:name=".MainActivity"
+            android:name="com.auth0field.hrimobiledemo.MainActivity"
             android:label="@string/title_main"
             android:exported="true">
             <intent-filter>
@@ -29,20 +29,20 @@
         </activity>
 
         <activity
-            android:name=".EnrollActivity"
+            android:name="com.auth0field.hrimobiledemo.EnrollActivity"
             android:label="@string/title_enroll">
 
         </activity>
 
         <activity
-            android:name=".NotificationActivity"
+            android:name="com.auth0field.hrimobiledemo.NotificationActivity"
             android:label="@string/title_notification">
 
         </activity>
 
         <!-- [START FCM services] -->
 
-        <service android:name=".fcm.FcmListenerService"
+        <service android:name="com.auth0field.hrimobiledemo.fcm.FcmListenerService"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
